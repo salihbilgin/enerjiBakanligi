@@ -80,10 +80,24 @@ class KurumaOzel(TemplateView):
         return context
 
 
-class Calender(TemplateView):
+class Themify(TemplateView):
     def get_context_data(self, **kwargs):
-        context = super(Calender, self).get_context_data(**kwargs)
-        self.template_name = "calender.html"
+        context = super(Themify, self).get_context_data(**kwargs)
+        self.template_name = "themify.html"
+        return context
+
+
+class IonIcon(TemplateView):
+    def get_context_data(self, **kwargs):
+        context = super(IonIcon, self).get_context_data(**kwargs)
+        self.template_name = "ionicon.html"
+        return context
+
+
+class Etline(TemplateView):
+    def get_context_data(self, **kwargs):
+        context = super(Etline, self).get_context_data(**kwargs)
+        self.template_name = "et-line.html"
         return context
 
 
@@ -98,7 +112,9 @@ urlpatterns = [
     re_path(r'haberler', Haberler.as_view(), name='Haberler'),
     re_path(r'duyurular', Duyurular.as_view(), name='duyurular'),
     re_path(r'anlasmali-kuruma-ozel', KurumaOzel.as_view(), name='anlasmali-kuruma-ozel'),
-    re_path(r'calendar', Calender.as_view(), name='calender'),
+    re_path(r'themify', Themify.as_view(), name='themify'),
+    re_path(r'ionicon', IonIcon.as_view(), name='ionicon'),
+    re_path(r'et-line', Etline.as_view(), name='et-line'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
