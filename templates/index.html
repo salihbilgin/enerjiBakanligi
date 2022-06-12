@@ -1,0 +1,251 @@
+{% extends "base.html" %}
+{% block body %}
+            <div class="row">
+                <div class="col-md-12 mt-4">
+                    <div class="card d-flex w-100">
+                        <div class="row no-gutters row-bordered row-border-light h-100 widget_row">
+                            <div class="d-flex col-md-6 col-lg-4 align-items-center">
+                                <div class="card-body">
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-auto">
+                                            <img src="assets/images/icon-bg.png" alt="Icon">
+                                            <i class="feather ft-briefcase text-primary display-4"></i>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="mb-0 text-muted">Yıllık <span class="text-primary">İzin</span></h6>
+                                            <h4 class="mt-3 mb-0">60</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex col-md-6 col-lg-4 align-items-center">
+                                <div class="card-body">
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-auto">
+                                            <img src="assets/images/icon-bg.png" alt="Icon">
+                                            <i class="feather ft-shopping-cart text-primary display-4"></i>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="mb-0 text-muted"><span class="text-primary">Kullanılan</span> İzin</h6>
+                                            <h4 class="mt-3 mb-0">25</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex col-md-6 col-lg-4 align-items-center">
+                                <div class="card-body">
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-auto">
+                                            <img src="assets/images/icon-bg.png" alt="Icon">
+                                            <i class="feather ft-users text-primary display-4"></i>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="mb-0 text-muted">Raporlu <span class="text-primary">Gün Sayısı</span></h6>
+                                            <h4 class="mt-3 mb-0">12</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p> </p>
+            <br>
+            <div class="row">
+                <div class="col-lg-8 stretched_card">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="carouselExampleCaption" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleCaption" data-slide-to="0" class=""></li>
+                                    <li data-target="#carouselExampleCaption" data-slide-to="1" class="active"></li>
+                                    <li data-target="#carouselExampleCaption" data-slide-to="2" class=""></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item">
+                                        <img src="assets/images/haber1.png" alt="Slider Image">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>7 bin 960 megavatlık güneş paneli üretimiyle Avrupa'da birinci, dünyada dördüncü sıradayız.</h5>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/haber2.png" alt="Slider Image">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5 class="text-light">Doğu Akdeniz gazının da Türkiye üzerinden pazarlara ulaşmasıyla alakalı yeni adımlar atılabilir</h5>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/haber3.png" alt="Slider Image">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5 class="text-light">Karadeniz gazında kritik bir safhayı daha geride bıraktık</h5>
+                                            <p>Enerji ve Tabii Kaynaklar Bakanı Fatih Dönmez, Karadeniz'de keşfedilen doğal gazı taşıyacak boruları deniz tabanına yerleştirecek geminin Çanakkale Boğazı'ndan geçtiğini bildirdi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaption" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaption" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row grid-masonry">
+                                        <!--=== Card Item ===-->
+                                        <div class="grid-item">
+                                            <div class="image_card">
+                                                <div class="card_img_hover">
+                                                    <div class="card_info">
+                                                        <svg class="card_clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+                                                        </svg><span class="card_date">13.06.2022</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card_img" style="background-image: url('/assets/images/img.png')"></div>
+                                                <a href="#" class="card_link">
+                                                    <div class="card_img_hover_sec" style="background-image: url('/assets/images/img.png')"></div>
+                                                </a>
+                                                <div class="card__info">
+                                                    <h3 class="card_title">Yemek Menüsü</h3>
+                                                    <span class="card_by">13.06.2022 <a href="#" class="card_author" title="author">Pazartesi</a></span>
+                                                    <span class="card_by">Döner - Pilav - Salata - Üzüm - Yoğurt</span>
+                                                    <a href="/yemek"><button type="button" class="btn btn-rounded btn-info mb-4">Haftalık Yemek Listesi</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--=== End Card Item ===-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Progress Table start -->
+                <div class="col-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card_title">Bugün Doğanlar</h4>
+                            <div class="single-table">
+                                <div class="table-responsive">
+                                    <table class="table table-hover progress-table text-center">
+                                        <thead class="text-uppercase">
+                                        <tr>
+                                            <th scope="col">İsim</th>
+                                            <th scope="col">Kurum</th>
+                                            <th scope="col">Bölge</th>
+                                            <th scope="col">Birim</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <span class="dot_vz dot_vz_success"></span>
+                                                <div class="text-left">
+                                                    <div class="text-dark">Salih Bilgin</div>
+                                                </div>
+                                            </td>
+                                            <td>Tedaş</td>
+                                            <td>Ankara</td>
+                                            <td>Bilgi Teknolojileri</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <span class="dot_vz dot_vz_success"></span>
+                                                <div class="text-left">
+                                                    <div class="text-dark">Mesut Çelebi</div>
+                                                </div>
+                                            </td>
+                                            <td>Teiaş</td>
+                                            <td>Malatya</td>
+                                            <td>Elektronik Sistemler</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <span class="dot_vz dot_vz_success"></span>
+                                                <div class="text-left">
+                                                    <div class="text-dark">Zeynep Türkoğlu</div>
+                                                </div>
+                                            </td>
+                                            <td>Bakanlık</td>
+                                            <td>Ankara</td>
+                                            <td>Kamulaştırma</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card_title">Vefat Bilgileri</h4>
+                            <div class="single-table">
+                                <div class="table-responsive">
+                                    <table class="table table-hover progress-table text-center">
+                                        <thead class="text-uppercase">
+                                        <tr>
+                                            <th scope="col">İsim</th>
+                                            <th scope="col">Kurum</th>
+                                            <th scope="col">Bölge</th>
+                                            <th scope="col">Birim</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <span class="dot_vz dot_vz_danger"></span>
+                                                <div class="text-left">
+                                                    <div class="text-dark">Barış Manço</div>
+                                                </div>
+                                            </td>
+                                            <td>Tedaş</td>
+                                            <td>Ankara</td>
+                                            <td>Özel Kalem</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <span class="dot_vz dot_vz_danger"></span>
+                                                <div class="text-left">
+                                                    <div class="text-dark">Ferhan Şensoy</div>
+                                                </div>
+                                            </td>
+                                            <td>Teiaş</td>
+                                            <td>Malatya</td>
+                                            <td>Mekanik Bakım</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <span class="dot_vz dot_vz_danger"></span>
+                                                <div class="text-left">
+                                                    <div class="text-dark">Zeki Müren</div>
+                                                </div>
+                                            </td>
+                                            <td>Bakanlık</td>
+                                            <td>Ankara</td>
+                                            <td>İletişim Başkanlığı</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Progress Table end -->
+            </div>
+{% endblock %}

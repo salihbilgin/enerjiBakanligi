@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block body %}
+                <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card_title">ARAÇ TALEP FORMU</h4>
+                            <div class="form-group col-6">
+                                <label for="alis-datetime-local-input" class="col-form-label">Araç Alış Zamanı</label>
+                                <input class="form-control" type="datetime-local" placeholder="Lütfen Tarih Seçiniz" id="alis-datetime-local-input">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="teslim-datetime-local-input" class="col-form-label">Araç Teslim Zamanı</label>
+                                <input class="form-control" type="datetime-local" placeholder="Lütfen Tarih Seçiniz"  id="teslim-datetime-local-input">
+                            </div>
+                            <div class="form-group col-6">
+                                <label class="col-form-label ">Kullanım Yeri</label>
+                                <select class="form-control">
+                                    <option>Seçiniz</option>
+                                    <option>İl İçi</option>
+                                    <option>İl Dışı</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-6">
+                                <label class="col-form-label ">Cinsi</label>
+                                <select class="form-control">
+                                    <option>Seçiniz</option>
+                                    <option>Binek</option>
+                                    <option>Arazi</option>
+                                    <option>Otobüs</option>
+                                    <option>Kamyon</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="example-text-input" class="col-form-label">Araç Talep Gerekçesi</label>
+                                <input class="form-control" type="text" placeholder="Lütfen gerekçeyi yazınız" id="example-text-input">
+                            </div>
+                            <div class="col-6 justify-content-center">
+                                <button class="btn btn-primary" type="submit">Araç Talep Et</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+{% endblock %}
+
