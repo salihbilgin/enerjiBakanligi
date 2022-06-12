@@ -66,6 +66,12 @@ class Haberler(TemplateView):
         self.template_name = "haberler.html"
         return context
 
+class Duyurular(TemplateView):
+    def get_context_data(self, **kwargs):
+        context = super(Duyurular, self).get_context_data(**kwargs)
+        self.template_name = "duyurular.html"
+        return context
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -76,6 +82,7 @@ urlpatterns = [
     re_path(r'rehber', Rehber.as_view(), name='rehber'),
     re_path(r'hava', Hava.as_view(), name='hava'),
     re_path(r'haberler', Haberler.as_view(), name='Haberler'),
+    re_path(r'duyurular', Duyurular.as_view(), name='duyurular'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
