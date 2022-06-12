@@ -60,6 +60,12 @@ class Hava(TemplateView):
         self.template_name = "hava.html"
         return context
 
+class Haberler(TemplateView):
+    def get_context_data(self, **kwargs):
+        context = super(Haberler, self).get_context_data(**kwargs)
+        self.template_name = "haberler.html"
+        return context
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -68,7 +74,8 @@ urlpatterns = [
     re_path(r'doviz', Doviz.as_view(), name='doviz'),
     re_path(r'arac', Arac.as_view(), name='arac'),
     re_path(r'rehber', Rehber.as_view(), name='rehber'),
-    re_path(r'hava', Hava.as_view(), name='rehber'),
+    re_path(r'hava', Hava.as_view(), name='hava'),
+    re_path(r'haberler', Haberler.as_view(), name='Haberler'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
