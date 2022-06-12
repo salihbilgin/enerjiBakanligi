@@ -48,11 +48,13 @@ class Arac(TemplateView):
         self.template_name = "arac.html"
         return context
 
+
 class Rehber(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(Rehber, self).get_context_data(**kwargs)
         self.template_name = "rehber.html"
         return context
+
 
 class Hava(TemplateView):
     def get_context_data(self, **kwargs):
@@ -60,11 +62,13 @@ class Hava(TemplateView):
         self.template_name = "hava.html"
         return context
 
+
 class Haberler(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(Haberler, self).get_context_data(**kwargs)
         self.template_name = "haberler.html"
         return context
+
 
 class Duyurular(TemplateView):
     def get_context_data(self, **kwargs):
@@ -108,6 +112,13 @@ class ImageCrop(TemplateView):
         return context
 
 
+class Profile(TemplateView):
+    def get_context_data(self, **kwargs):
+        context = super(Profile, self).get_context_data(**kwargs)
+        self.template_name = "profile.html"
+        return context
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^$', HomePageView.as_view(), name='homepage'),
@@ -122,6 +133,7 @@ urlpatterns = [
     re_path(r'themify', Themify.as_view(), name='themify'),
     re_path(r'ionicon', IonIcon.as_view(), name='ionicon'),
     re_path(r'et-line', Etline.as_view(), name='et-line'),
+    re_path(r'profile', Profile.as_view(), name='profile-line'),
     re_path(r'image-crop', ImageCrop.as_view(), name='etimage-line'),
 ]
 if settings.DEBUG:
