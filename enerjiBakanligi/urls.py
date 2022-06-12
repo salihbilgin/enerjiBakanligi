@@ -83,7 +83,7 @@ class KurumaOzel(TemplateView):
 class Calender(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(Calender, self).get_context_data(**kwargs)
-        self.template_name = "full-calendar.html"
+        self.template_name = "calender.html"
         return context
 
 
@@ -98,7 +98,7 @@ urlpatterns = [
     re_path(r'haberler', Haberler.as_view(), name='Haberler'),
     re_path(r'duyurular', Duyurular.as_view(), name='duyurular'),
     re_path(r'anlasmali-kuruma-ozel', KurumaOzel.as_view(), name='anlasmali-kuruma-ozel'),
-    re_path(r'calender', Calender.as_view(), name='calender'),
+    re_path(r'calendar', Calender.as_view(), name='calender'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
