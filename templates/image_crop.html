@@ -1,0 +1,50 @@
+{% extends "image_crop.html" %}
+<!-- Cropper Js -->
+<script src="../assets/vendors/cropper/js/cropper.min.js"></script>
+<!-- Cropper Init Js -->
+<script src="../assets/js/init/cropper.js"></script>
+
+{% block body %}
+    <div class="vz_main_sec">
+
+        <div class="row">
+            <!--=========================*
+                 Main Section
+         *===========================-->
+            <div class="vz_main_container">
+                <div class="vz_main_content">
+                    <div class="stretched_card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card_title">Image Cropper</h4>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="img-container o-hidden">
+                                            <img class="cropper-main-img img-fluid cropper-hidden"
+                                                 src="../assets/images/blog-listing/03.jpg" alt="Picture">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="docs-preview clearfix">
+                                                <div class="img-preview preview-lg img-fluid"></div>
+                                                <div class="img-preview preview-md img-fluid"></div>
+                                                <div class="img-preview preview-sm img-fluid"></div>
+                                                <div class="img-preview preview-xs img-fluid"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=========================*
+                    End Main Section
+           *===========================-->
+        </div>
+
+    </div>
+{% endblock %}
+
