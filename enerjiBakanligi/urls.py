@@ -101,6 +101,13 @@ class Etline(TemplateView):
         return context
 
 
+class ImageCrop(TemplateView):
+    def get_context_data(self, **kwargs):
+        context = super(ImageCrop, self).get_context_data(**kwargs)
+        self.template_name = "image_crop.html"
+        return context
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^$', HomePageView.as_view(), name='homepage'),
@@ -115,6 +122,7 @@ urlpatterns = [
     re_path(r'themify', Themify.as_view(), name='themify'),
     re_path(r'ionicon', IonIcon.as_view(), name='ionicon'),
     re_path(r'et-line', Etline.as_view(), name='et-line'),
+    re_path(r'image-crop', ImageCrop.as_view(), name='etimage-line'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
